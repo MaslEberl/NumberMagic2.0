@@ -17,12 +17,21 @@ public class FestgelegteGrenzen {
     Grenzen unsicherMultiplizieren = new Grenzen(5,5,100,100,1,1);
     Grenzen unsicherDividieren = new Grenzen(5,5,100,100,1,1);
 
-    Grenzen rationalAddieren = new Grenzen(100,100,10000,10000,3,3);
-    Grenzen rationalSubtrahieren= new Grenzen(100,100,10000,10000,3,3);
-    Grenzen rationalMultiplizieren = new Grenzen(10,10,100,100,1,1);
-    Grenzen rationalDividieren = new Grenzen();
-    Grenzen rationalPotenzieren = new Grenzen();
-    Grenzen rationalRadizieren = new Grenzen();
+    //Bei Potenzieren  ist Zahl 1 Basis, Zahl 2 Exponent
+    //Bei Radizieren  ist Zahl 1 Radikant, Zahl 2 Radexexponent
 
+    Grenzen rationalAddieren = new Grenzen(0,0,10000,10000,3,3);
+    Grenzen rationalSubtrahieren= new Grenzen(0,0,10000,10000,3,3);
+    Grenzen rationalMultiplizieren = new Grenzen(10,10,100,100,1,1);
+    Grenzen rationalDividieren = new Grenzen(10,10,100,100,2,2);
+    Grenzen rationalPotenzieren = new Grenzen(2,0,2,12,0,0);
+    Grenzen rationalRadizieren = new Grenzen(2,0,2,12,0,0);
+
+    Grenzen gemeinAddieren = new Grenzen(0,0,100000,100000,3,3);
+    Grenzen gemeinSubtrahieren = new Grenzen();
+    Grenzen gemeinMultiplzieren = new Grenzen();
+    Grenzen gemeinDividieren = new Grenzen();
+    Grenzen gemeinPotenzieren = new Grenzen();
+    Grenzen gemeinRadizieren = new Grenzen();
 
 }
