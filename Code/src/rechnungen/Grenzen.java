@@ -8,6 +8,15 @@ public class Grenzen{
     private int kommaZahl1;
     private int kommaZahl2;
 
+    public Grenzen(double minZahl1, double minZahl2, double maxZahl1, double maxZahl2, int kommaZahl1, int kommaZahl2) {
+        this.minZahl1 = minZahl1;
+        this.minZahl2 = minZahl2;
+        this.maxZahl1 = maxZahl1;
+        this.maxZahl2 = maxZahl2;
+        this.kommaZahl1 = kommaZahl1;
+        this.kommaZahl2 = kommaZahl2;
+    }
+
     public double getMinZahl1() {
         return minZahl1;
     }
