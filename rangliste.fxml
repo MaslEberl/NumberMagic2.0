@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="383.0" fitWidth="566.0" layoutX="170.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tafel.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="253.0" />
+      <Text layoutX="14.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© NumberMagic Team">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="377.0" layoutX="14.0" layoutY="36.0" stroke="#7e9073" strokeType="INSIDE" strokeWidth="2.0" width="144.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#84f9ff" />
+                  <Stop color="#84f9ff" offset="0.007662835249042145" />
+                  <Stop color="#233e6e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <SplitMenuButton alignment="TOP_CENTER" layoutX="21.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Levels" textFill="#494f8a" textOverrun="CENTER_ELLIPSIS">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </SplitMenuButton>
+      <Button layoutX="21.0" layoutY="136.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Hilfe" textFill="#494f8a">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Mitwirkende" textFill="#494f8a">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Rangliste" textFill="#494f8a">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
