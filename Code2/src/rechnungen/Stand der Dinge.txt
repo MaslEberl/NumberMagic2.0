@@ -1,0 +1,12 @@
+---- Was ist Fertig im Code zum Erzeugen der Rechnungen ----
+
+* Die Klassen für das Grundgerüßt, das die Schwierigkeitsmodi ermöglicht:
+* Modus (fast), Operationen, Term, Terme, Grenzen
+* Als Schnittstelle zum GUI diehnt hauptsächlich RechnungenErzeugen
+
+---- Was noch Fehlt ----
+
+ *! Rechnungen Erzeugen
+ * Alse der eigentliche Algorithmus, der die Rechnungen erzeugt, sodass sie in den Grenzen bleiben...
+ * In Modus mehr Getter und Setter
+ * Das Projekt irgendwie startfähig machen ...

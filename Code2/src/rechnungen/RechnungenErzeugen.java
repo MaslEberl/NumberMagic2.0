@@ -27,29 +27,29 @@ public class RechnungenErzeugen {
     * Somit muss für jede Runde eine Instanz dieser Klasse erzeugt werden. */
     private Modus modus;
     private Terme terme;
+    private static final int maxVersuche = 10;
 
     public RechnungenErzeugen(Modus modus) {
         this.modus = modus;
     }
 
-    public Terme erzeuge()
-    {
+    public Terme erzeuge() {
         return new Terme();
     }
 
     /** @return Gibt null zurück, wenn es fehlschlägt. */
     private Term erzeugeTerm(int position)
     {
-        modus.getForOperationen();
+        Grenzen grenzen = modus.getForOperationen(wähleOperation());
 
-
-
-
+        for(int i=0; i<maxVersuche; i++) {
+            double zahl2 = erzeugeZahlInGrenzen(grenzen);
+        }
         return new Term();
     }
 
     //TODO Am besten aus der Modus-Klasse alle Operationen herausholen als Array, dann spart man sich das switch
-    private Operation wähleOperation() {
+    private static Operation wähleOperation() {
         Random randomGenerator = new Random();
         int rand = randomGenerator.nextInt(6);
         Operation op;
@@ -66,5 +66,14 @@ public class RechnungenErzeugen {
         }
 
         return op;
+    }
+
+    /** Zufallszahl im Bereich von (inklusiv)
+     * minZahl2 bis maxZahl2*/
+    private static double erzeugeZahlInGrenzen(Grenzen grenzen)
+    {
+        Random rand = new Random();
+        // rand() % (max - min +1) + min
+        return rand.nextInt() % (grenzen.getMaxZahl2() -grenzen.getMinZahl2() +1) +grenzen.getMinZahl2();
     }
 }
